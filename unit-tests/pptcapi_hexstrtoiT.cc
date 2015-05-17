@@ -77,7 +77,7 @@ public:
 
 	{
 	    char *error = 0 ;
-	    char *hexstr = "0005" ;
+	    char *hexstr = (char *)"0005" ;
 	    int result = 0 ;
 	    int res = pptcapi_hexstr_to_i( hexstr, &result, &error ) ;
 	    CPPUNIT_ASSERT( res == PPTCAPI_OK ) ;
@@ -88,7 +88,7 @@ public:
 
 	{
 	    char *error = 0 ;
-	    char *hexstr = "000d" ;
+	    char *hexstr = (char *)"000d" ;
 	    int result = 0 ;
 	    int res = pptcapi_hexstr_to_i( hexstr, &result, &error ) ;
 	    CPPUNIT_ASSERT( res == PPTCAPI_OK ) ;
@@ -99,7 +99,7 @@ public:
 
 	{
 	    char *error = 0 ;
-	    char *hexstr = "002d" ;
+	    char *hexstr = (char *)"002d" ;
 	    int result = 0 ;
 	    int res = pptcapi_hexstr_to_i( hexstr, &result, &error ) ;
 	    CPPUNIT_ASSERT( res == PPTCAPI_OK ) ;
@@ -110,7 +110,7 @@ public:
 
 	{
 	    char *error = 0 ;
-	    char *hexstr = "00cd" ;
+	    char *hexstr = (char *)"00cd" ;
 	    int result = 0 ;
 	    int res = pptcapi_hexstr_to_i( hexstr, &result, &error ) ;
 	    CPPUNIT_ASSERT( res == PPTCAPI_OK ) ;
@@ -121,7 +121,7 @@ public:
 
 	{
 	    char *error = 0 ;
-	    char *hexstr = "1c4d" ;
+	    char *hexstr = (char *)"1c4d" ;
 	    int result = 0 ;
 	    int res = pptcapi_hexstr_to_i( hexstr, &result, &error ) ;
 	    CPPUNIT_ASSERT( res == PPTCAPI_OK ) ;
@@ -132,7 +132,7 @@ public:
 
 	{
 	    char *error = 0 ;
-	    char *hexstr = "00xz" ;
+	    char *hexstr = (char *)"00xz" ;
 	    int result = 0 ;
 	    int res = pptcapi_hexstr_to_i( hexstr, &result, &error ) ;
 	    CPPUNIT_ASSERT( res == PPTCAPI_ERROR ) ;

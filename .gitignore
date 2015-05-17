@@ -1,3 +1,39 @@
+# local to pptcapi #
+###################
+bes_pptcapi.pc
+libtool
+pptcapi-config
+stamp-h1
+pptcapi_test
+pptcapi_extensionsT
+pptcapi_hexstrtoiT
+
+# auto tools #
+###################
+Makefile.in
+Makefile
+aclocal.m4
+autom4te.cache
+config.guess
+config.sub
+depcomp
+install-sh
+libtool.m4
+ltmain.sh
+ltoptions.m4
+ltsugar.m4
+ltversion.m4
+lt~obsolete.m4
+missing
+*.*~
+configure
+configure.in
+config.status
+config.h
+atlocal.in
+atlocal
+atconfig
+
 # Compiled source #
 ###################
 *.com
@@ -6,6 +42,10 @@
 *.exe
 *.o
 *.so
+*.lo
+.deps
+.libs
+*.la
  
 # Packages #
 ############

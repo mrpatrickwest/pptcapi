@@ -78,7 +78,7 @@ public:
 
 	{
 	    struct pptcapi_extensions *extensions = 0 ;
-	    char *buffer = "n1=v1;n2;n3=v3;" ;
+	    char *buffer = (char *)"n1=v1;n2;n3=v3;" ;
 	    char *error = 0 ;
 	    int result = pptcapi_read_extensions( &extensions, buffer, &error );
 	    CPPUNIT_ASSERT( result == PPTCAPI_OK ) ;
@@ -126,7 +126,7 @@ public:
 
 	{
 	    struct pptcapi_extensions *extensions = 0 ;
-	    char *buffer = "n1=v1;" ;
+	    char *buffer = (char *)"n1=v1;" ;
 	    char *error = 0 ;
 	    int result = pptcapi_read_extensions( &extensions, buffer, &error );
 	    CPPUNIT_ASSERT( result == PPTCAPI_OK ) ;
@@ -158,7 +158,7 @@ public:
 
 	{
 	    struct pptcapi_extensions *extensions = 0 ;
-	    char *buffer = "n1;" ;
+	    char *buffer = (char *)"n1;" ;
 	    char *error = 0 ;
 	    int result = pptcapi_read_extensions( &extensions, buffer, &error );
 	    CPPUNIT_ASSERT( result == PPTCAPI_OK ) ;
@@ -188,7 +188,7 @@ public:
 
 	{
 	    struct pptcapi_extensions *extensions = 0 ;
-	    char *buffer = "n1=v1" ;
+	    char *buffer = (char *)"n1=v1" ;
 	    char *error = 0 ;
 	    int result = pptcapi_read_extensions( &extensions, buffer, &error );
 	    CPPUNIT_ASSERT( result == PPTCAPI_ERROR ) ;
