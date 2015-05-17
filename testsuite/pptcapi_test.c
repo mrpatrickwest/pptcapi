@@ -190,7 +190,7 @@ main( int argc, char **argv )
     int tcp_send_buffer_size = 70000 ;
     int timeout = 5 ;
     struct pptcapi_connection *connection =
-	pptcapi_tcp_connect( "localhost", 10002, timeout,
+	pptcapi_tcp_connect( "localhost", 10022, timeout,
 			     tcp_rcv_buffer_size,
 			     tcp_send_buffer_size,
 			     &error ) ;
